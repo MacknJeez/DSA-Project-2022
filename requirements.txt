@@ -1,0 +1,51 @@
+/*
+reading from file
+1. queue
+2. --
+3. --
+4.immunocompromisde, from menu opption, switch case
+5.check due booster
+*/
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Enter month number:
+-------------------------------------------------------------------------------------------------------------------------------------------
+Menu functions:
+---------------
+1.Add record (queue into arraylist) condition: check if patient number already taken  DONE
+2.Remove records  DONE
+3.View particular record(linear search ((flatn, name)or (id))  DONE
+4.View all records sorted: -------------------------------------------------------------------------------------> INSERTION SORT
+		alphabetically
+		id(eeznuts) 
+5.List of people due for booster (we can ask for the time period for which to check as a suboption in a switch case)
+				In next n months
+                (sort by month using insertion sort) -----------------------------------------------------------> INSERTION SORT
+6.List of ppl who took specific vaccine(enter pharm company name) ----------------------------------------------> MERGE SORT
+		alph
+        id
+7.List of ppl who are at risk (immuno compromised) -------------------------------------------------------------> QUICK SORT
+		alph
+        id
+-------------------------------------------------------------------------------------------------------------------------------------------
+Mock records:
+-------------
+Patient id, patient name, flat no, age(to see if eligible for vaccine yet), shots taken, immunocompromised?(y/n), pharm comp, month of s1,s2,s3,s4
+id	n		fln	age	sh	ic	pc	s1mnth	s2mnth	s3mnth	s4mnth
+1	juan	1	19	3	0	p	1		2		8		0
+2	poop	1	54	4	0	m	1		2		8		9
+3	turd	2	25	4	1	p	1		2		5		6
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Conditions
+----------
+<12:	0 shots
+		shot1
+gen:	shot2 +1 month, shot3(1st booster) +6 months, shot4(2nd booster) 0
+ic:		shot3(1st booster) +3 months, shot4(2nd booster) +1 month
+>50:	shot3(1st booster) +6 months, shot4(2nd booster) +1 month
+(ic more important than age)
+
+assuming every pharm company has same value and efficacy
+-------------------------------------------------------------------------------------------------------------------------------------------
